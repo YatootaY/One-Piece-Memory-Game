@@ -1,0 +1,33 @@
+.LoadScreen{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  gap:20px;
+}
+
+.LoadScreen > img{
+  width: 100px;
+  height: auto;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .LoadScreen > img {
+    animation: App-logo-spin infinite 3s linear;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
