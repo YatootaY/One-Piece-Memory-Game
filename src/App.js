@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
-import LoadScreen from './LoadScreen.js'
-import HeadBar from './HeadBar.js'
-import "./App.css"
+import LoadScreen from './components/LoadScreen.js'
+import HeadBar from './components/HeadBar.js'
+import GameArea from './components/GameArea.js'
+import "./styles/App.css"
 
 const App = () => {
 
@@ -18,6 +19,7 @@ const App = () => {
     <div className="App">
       {load === true ? <LoadScreen/> : null}
       <HeadBar/>
+      <GameArea/>
     </div>
   )
 }
