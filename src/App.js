@@ -7,6 +7,21 @@ import "./styles/App.css"
 const App = () => {
 
   const [load,setLoad] = useState(true);
+  const [score, setScore] = useState(0);
+  const [best, setBest] = useState(0);
+
+  const correctClick = () => {
+    setScore(score+1)
+  }
+
+  const wrongClick = () => {
+
+    if (score > best){
+      setBest(score)
+    }
+    setScore(0)
+  }
+
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -15,10 +30,13 @@ const App = () => {
     return () => clearTimeout(timer);
   },[])
 
+
   return(
     <div className="App">
       {load === true ? <LoadScreen/> : null}
-      <HeadBar/>
+      <HeadBar score={score} best={best}/>
+      <button onClick={correctClick}>Correct</button>
+      <button onClick={wrongClick}>Wrong</button>
       <GameArea/>
     </div>
   )
