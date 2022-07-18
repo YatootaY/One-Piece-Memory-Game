@@ -7,10 +7,11 @@
   --blue: #164c80;
 }
 
-html,body{
+html,body,h1,p{
   margin: 0;
   padding: 0;
 }
+
 
 .App{
   min-height: 100vh;

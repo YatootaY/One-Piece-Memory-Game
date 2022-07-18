@@ -1,5 +1,6 @@
 .LoadScreen{
   position: fixed;
+  background-color: var(--black);
   top: 0;
   left: 0;
   width: 100%;

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import LoadScreen from './LoadScreen.js'
+import HeadBar from './HeadBar.js'
 import "./App.css"
 
 const App = () => {
@@ -16,7 +17,7 @@ const App = () => {
   return(
     <div className="App">
       {load === true ? <LoadScreen/> : null}
-
+      <HeadBar/>
     </div>
   )
 }
