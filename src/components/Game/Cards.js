@@ -15,7 +15,7 @@ import zoro from "../../images/zoro.jpg"
 
 const Cards = () => {
 
-  const [cards,setCards] = useState([])
+  const [cards,setCards] = useState([ace,hancock,kaido,kuzan,law,luffy,nami,robin,senji,shanks,usopp,zoro])
 
   useEffect(() => {
     console.log("Updated")
@@ -27,10 +27,24 @@ const Cards = () => {
     setCards(pics)
   }
 
+  const getAltName = (pic) => {
+    let altName = "";
+    if (typeof(pic) === "string" ){
+      altName = pic.split('/')[3].split(".")[0]
+    }else{
+      altName = 'none'
+    }
+    return altName
+  }
+
   return(
     <div className="Cards">
       <button onClick={cardsShuffle}>Shuffle</button>
-      <Card pic={cards[0]}/>
+      <ul>
+        {[...Array(cards.length).keys()].map((i) => {
+          return <Card pic={cards[i]} altName= {getAltName(cards[i])} key={getAltName(cards[i])}/>
+        })}
+      </ul>
     </div>
   )
 }

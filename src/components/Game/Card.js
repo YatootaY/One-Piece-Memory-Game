@@ -1,19 +1,12 @@
 import React from 'react'
 
 
-const Card = ({pic}) => {
-
-  let altName = "";
-  if (typeof(pic) === "string" ){
-    altName = pic.split('/')[3].split(".")[0]
-  }else{
-    altName = 'none'
-  }
+const Card = ({pic,altName}) => {
 
   return(
-    <div>
+    <li>
       <img src={pic} alt={altName}/>
-    </div>
+    </li>
   )
 }
 
