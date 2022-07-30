@@ -23,7 +23,7 @@ const Cards = () => {
   }, [cards]);
 
   const cardsShuffle = () => {
-    let pics = [ace,hancock,kaido,kuzan,law,luffy,nami,robin,senji,shanks,usopp,zoro]
+    let pics = [...cards]
     pics.sort(() => Math.random() - 0.5);
     setCards(pics)
   }
