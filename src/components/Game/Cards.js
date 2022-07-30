@@ -12,6 +12,7 @@ import senji from "../../images/senji.jpg"
 import shanks from "../../images/shanks.jpg"
 import usopp from "../../images/usopp.jpg"
 import zoro from "../../images/zoro.jpg"
+import "../../styles/Cards.css"
 
 const Cards = () => {
 
