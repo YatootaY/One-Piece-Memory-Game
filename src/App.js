@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import LoadScreen from './components/LoadScreen.js'
 import HeadBar from './components/HeadBar.js'
 import GameArea from './components/GameArea.js'
+import Footer from './components/Footer.js'
 import "./styles/App.css"
 
 const App = () => {
@@ -36,6 +37,7 @@ const App = () => {
       {load === true ? <LoadScreen/> : null}
       <HeadBar score={score} best={best}/>
       <GameArea correctClick={correctClick} wrongClick={wrongClick}/>
+      <Footer/>
     </div>
   )
 }
