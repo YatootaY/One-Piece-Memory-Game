@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/One-Piece-Memory-Game/static/css/main.d1cbbf46.css",
+    "main.js": "/One-Piece-Memory-Game/static/js/main.8fe07530.js",
+    "static/media/zoro.jpg": "/One-Piece-Memory-Game/static/media/zoro.87afb70518f401e370ee.jpg",
+    "static/media/kuzan.jpg": "/One-Piece-Memory-Game/static/media/kuzan.52c4350795f38d8629b6.jpg",
+    "static/media/law.jpg": "/One-Piece-Memory-Game/static/media/law.8fe6de26343b613ce8bb.jpg",
+    "static/media/nami.jpg": "/One-Piece-Memory-Game/static/media/nami.e8896c87881153afc362.jpg",
+    "static/media/robin.jpg": "/One-Piece-Memory-Game/static/media/robin.0e2c5978f059f97ef848.jpg",
+    "static/media/usopp.jpg": "/One-Piece-Memory-Game/static/media/usopp.25af3b2c5f7fa10d7f2e.jpg",
+    "static/media/shanks.jpg": "/One-Piece-Memory-Game/static/media/shanks.4d6c1004266467457492.jpg",
+    "static/media/ace.jpg": "/One-Piece-Memory-Game/static/media/ace.fb883178b9fe277c3133.jpg",
+    "static/media/logo.png": "/One-Piece-Memory-Game/static/media/logo.1c91a3c2a19d43ffd3cd.png",
+    "static/media/senji.jpg": "/One-Piece-Memory-Game/static/media/senji.d3f46c9ccd53b4ea4364.jpg",
+    "static/media/hancock.jpg": "/One-Piece-Memory-Game/static/media/hancock.7095de94ce4aa93938b8.jpg",
+    "static/media/luffy.jpg": "/One-Piece-Memory-Game/static/media/luffy.d7aaa27df4aba1850ebe.jpg",
+    "static/media/kaido.jpg": "/One-Piece-Memory-Game/static/media/kaido.29d38d6756c9778b27cc.jpg",
+    "index.html": "/One-Piece-Memory-Game/index.html",
+    "main.d1cbbf46.css.map": "/One-Piece-Memory-Game/static/css/main.d1cbbf46.css.map",
+    "main.8fe07530.js.map": "/One-Piece-Memory-Game/static/js/main.8fe07530.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d1cbbf46.css",
+    "static/js/main.8fe07530.js"
+  ]
+}
