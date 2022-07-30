@@ -35,9 +35,7 @@ const App = () => {
     <div className="App">
       {load === true ? <LoadScreen/> : null}
       <HeadBar score={score} best={best}/>
-      <button onClick={correctClick}>Correct</button>
-      <button onClick={wrongClick}>Wrong</button>
-      <GameArea/>
+      <GameArea correctClick={correctClick} wrongClick={wrongClick}/>
     </div>
   )
 }

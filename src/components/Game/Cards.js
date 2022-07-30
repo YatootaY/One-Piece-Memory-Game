@@ -1,4 +1,4 @@
-import React,{useState,useEffect} from "react"
+import React,{useState} from "react"
 import Card from "./Card.js"
 import ace from "../../images/ace.jpg"
 import hancock from "../../images/hancock.jpg"
@@ -14,13 +14,9 @@ import usopp from "../../images/usopp.jpg"
 import zoro from "../../images/zoro.jpg"
 import "../../styles/Cards.css"
 
-const Cards = () => {
+const Cards = ({cardClick}) => {
 
   const [cards,setCards] = useState([ace,hancock,kaido,kuzan,law,luffy,nami,robin,senji,shanks,usopp,zoro])
-
-  useEffect(() => {
-    console.log("Updated")
-  }, [cards]);
 
   const cardsShuffle = () => {
     let pics = [...cards]
@@ -40,10 +36,14 @@ const Cards = () => {
 
   return(
     <div className="Cards">
-      <button onClick={cardsShuffle}>Shuffle</button>
       <ul>
         {[...Array(cards.length).keys()].map((i) => {
-          return <Card pic={cards[i]} altName= {getAltName(cards[i])} key={getAltName(cards[i])}/>
+          return <Card
+            pic={cards[i]}
+            altName= {getAltName(cards[i])}
+            key={getAltName(cards[i])}
+            cardsShuffle={cardsShuffle}
+            cardClick={cardClick}/>
         })}
       </ul>
     </div>
