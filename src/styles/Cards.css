@@ -11,10 +11,33 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  gap:40px;
 }
 
-.Cards > ul > li > img{
-  width: 400px;
-  height: 500px;
+.Card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px ;
+  background-color: #403d3d;
+  border-radius: 5%;
+  justify-content: center;
+  gap:30px;
+  transition: all 0.25s;
+}
+
+.Card > img{
+  width: 250px;
+  height: 300px;
   object-fit: cover;
+  border-radius: 5%;
+}
+
+.Card > Label{
+  text-transform: capitalize;
+  font-size: 25px;
+}
+
+.Card:hover{
+  transform: scale(1.1);
 }

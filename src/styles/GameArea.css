@@ -3,3 +3,8 @@
   flex-direction: column;
   align-items: center;
 }
+
+.GameArea > h2{
+  font-size: 2em;
+  letter-spacing: 5px;
+}
