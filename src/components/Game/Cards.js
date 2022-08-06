@@ -16,7 +16,7 @@ import "../../styles/Cards.css"
 
 const Cards = ({cardClick}) => {
 
-  const [cards,setCards] = useState([ace,hancock,kaido,kuzan,law,luffy,nami,robin,senji,shanks,usopp,zoro])
+  const [cards,setCards] = useState([{ace: ace},{hancock: hancock},{kaido: kaido},{kuzan: kuzan},{law: law},{luffy: luffy},{nami: nami},{robin: robin},{senji: senji},{shanks: shanks},{usopp: usopp},{zoro: zoro}])
 
   const cardsShuffle = () => {
     let pics = [...cards]
@@ -26,8 +26,8 @@ const Cards = ({cardClick}) => {
 
   const getAltName = (pic) => {
     let altName = "";
-    if (typeof(pic) === "string" ){
-      altName = pic.split('/')[3].split(".")[0]
+    if (typeof(pic) === "object" ){
+      altName = Object.keys(pic)[0]
     }else{
       altName = 'none'
     }

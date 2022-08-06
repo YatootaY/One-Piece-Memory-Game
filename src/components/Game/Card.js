@@ -10,7 +10,7 @@ const Card = ({pic,altName,cardsShuffle,cardClick}) => {
 
   return(
     <li className="Card" onClick={clicked}>
-      <img src={pic} alt={altName}/>
+      <img src={pic[altName]} alt={altName}/>
       <label>{altName}</label>
     </li>
   )
