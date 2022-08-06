@@ -12,22 +12,17 @@ const GameArea = ({correctClick,wrongClick}) => {
     if (clickedCards.indexOf(altName) !== -1){
       wrongClick()
       setClickedCards([])
-      changeMsg("Choose different characters")
+      changeMsg("TRY AGAIN")
     }else{
       setClickedCards([...clickedCards,altName])
       let len = clickedCards.length;
-      if ( len > 5 ){
-        changeMsg("Oh you are doing great")
-      }else if (len > 8){
-        changeMsg("Focus you are gonna win!")
-      }else if (len >10){
-        changeMsg("Almost there...")
-      }else if (len === 12 ){
+      if ( len === 11 ){
         changeMsg("You win!!!")
+      }else
+        changeMsg(`${len+1}/12`)
+        correctClick()
       }
-      correctClick()
     }
-  }
 
   return(
     <div className="GameArea">
